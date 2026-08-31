@@ -1,0 +1,24 @@
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit config and runtime caches
+.streamlit/
+
+# Large PDF files (prevent uploading sample documents)
+*.pdf
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific files
+Thumbs.db
+.DS_Store
