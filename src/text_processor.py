@@ -17,6 +17,10 @@ def clean_text(text):
     text = text.replace("\r\n", "\n")
     text = text.replace("\r", "\n")
 
+    # Rejoin words hyphenated at line breaks (e.g., ma- \n chine -> machine)
+    text = re.sub(r"(\w+)\s*-\s*\n\s*(\w+)", r"\1\2", text)
+
+
     # Remove excessive spaces and tabs
     text = re.sub(r"[ \t]+", " ", text)
 
